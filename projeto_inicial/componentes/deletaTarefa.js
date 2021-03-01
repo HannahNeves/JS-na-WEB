@@ -1,23 +1,21 @@
-const BotaoDeleta = () => {
-  const botaoDeleta = document.createElement('button')
+const BotaoDeleta = () => { 
+    const botaoDeleta = document.createElement('button')
 
-  botaoDeleta.innerText = 'deletar'
+    botaoDeleta.innerText = 'deletar'
+    botaoDeleta.addEventListener('click', deletarTarefa)
 
-  botaoDeleta.addEventListener('click', deletarTarefa)
-
-  return botaoDeleta
+    return botaoDeleta
 }
 
-const deletarTarefa = (evento) => {
-  const botaoDeleta = evento.target
+const deletarTarefa = (evento) => { 
+    const botaoDeleta = evento.target
+    
+    const tarefaCompleta = botaoDeleta.parentElement
 
-  const tarefaCompleta = botaoDeleta.parentElement
+    tarefaCompleta.remove()
 
-  tarefaCompleta.remove() // Remove o elemento da árvore
+    return botaoDeleta
 
-  return botaoDeleta
 }
 
 export default BotaoDeleta
-// Transforma o código JS em um módulo
-// Também serve para encapsular
