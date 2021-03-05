@@ -1,4 +1,4 @@
-# 💚 [Curso Alura](https://www.alura.com.br/)
+# 💚 [Curso Alura](https://www.alura.com.br/curso-online-javascript-manipulacao-dom)
 
 ✅ Manipulando o DOM e o Local Storage
 
